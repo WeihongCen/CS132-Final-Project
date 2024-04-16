@@ -1,0 +1,59 @@
+/*
+    NAME: Weihong Cen
+    DATE: 06/09/2023
+
+    This is the CSS used to style the login page.
+ */
+
+/* login */
+#login-form, input, #login-form div, #login-form button {
+    height: fit-content;
+}
+#login-page {
+    box-sizing: border-box;
+    /* background: linear-gradient(0deg, #0d0f1b 0%, #313B72 50%, #367476 100%); */
+    height: 100vh;
+    width: 100vw;
+    padding: 10vh 0;
+    position: fixed;
+    transition: all 1s;
+}
+.login-page-login-state {
+    opacity: 1;
+    visibility: visible;
+}
+.login-page-main-state {
+    margin-top: 100vh;
+    opacity: 0;
+    visibility: hidden;
+}
+#login-form {
+    box-sizing: border-box;
+    background-color: #D8D5DB;
+    width: 500px;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 5vh auto;
+    box-shadow: 0 0 10px black;
+}
+#login-page input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10pt;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+}
+#login-form div {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+#login-form button {
+    width: 100%;
+    margin: 10px auto;
+    box-shadow: 0 1px 2px #2D3142;
+}
+#signup-btn {
+    background-color: #00A9A5;
+}

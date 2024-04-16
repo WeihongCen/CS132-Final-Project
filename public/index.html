@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+  Name: Weihong Cen
+  CS 132 Spring 2023
+  Date: 05/23/2023
+
+  This is a single page website for the game Fish to Fortunes.
+  Unfortunately, I spent too much time focusing on the backend and some of the graphics that I
+  don't have any more time to complete the gameplay loop and essential shop features.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="shop.css">
+  <script defer src="script.js"></script>
+  <title>FISH TO FORTUNES</title>
+  <!--Google Fonts Montserrat-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <div id="skybox"></div>
+  <div id="wave-background" class="wave-login-state"></div>
+  <div id="ground-background" class="ground-login-state"></div>
+
+  <div id="login-page" class="login-page-login-state">
+    <h1 class="light-color">FISH TO FORTUNES</h1>
+    <div id="login-form">
+      <input type="text" id="username-input" placeholder="Username">
+      <input type="password" id="password-input" placeholder="Password (Don't use actual password)">
+      <p class="warning-msg"></p>
+      <button id="login-btn">LOGIN</button>
+      <button id="signup-btn">CREATE ACCOUNT</button>
+    </div>
+  </div>
+
+  <div id="main-page" class="main-page-login-state">
+    <div id="profile">
+      <p>Username: </p>
+      <p>Shells: 0</p>
+      <p>Strength: 20</p>
+      <p class="warning-msg"></p>
+      <button id="signout-btn">SIGN OUT</button>
+    </div>
+    <button id="inventory-btn">INVENTORY</button>
+    <button id="fish-btn">FISH</button>
+    <button id="shop-btn">SHOP</button>
+
+    <dialog id="inventory">
+      <form method="dialog">
+        <button class="modal-close-btn">X</button>
+      </form>
+      <div id="item-display"></div>
+      <div id="details">
+        <p></p>
+        <div id="item-actions" class="hidden">
+          <button>Equip</button>
+          <button>Sell for:</button>
+          <input type="number" id="sell-input" placeholder="input amount of shells">
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="notification">
+      <form method="dialog">
+        <button class="modal-close-btn">X</button>
+      </form>
+      <p></p>
+      <img src="imgs/fish.svg" alt="fish image">
+      <p></p>
+    </dialog>
+
+    <dialog id="shop">
+      <form method="dialog">
+        <button class="modal-close-btn">X</button>
+      </form>
+      <div id="gallary"></div>
+    </dialog>
+  </div>
+  
+</body>
+</html>

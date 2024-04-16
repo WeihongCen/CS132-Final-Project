@@ -1,0 +1,85 @@
+/*
+    NAME: Weihong Cen
+    DATE: 05/23/2023
+
+    This is the CSS used for general styling.
+ */
+
+body {
+    display: flex;
+    margin: 0;
+    background: linear-gradient(0deg, #0d0f1b 0%, #313B72 50%, #367476 100%);
+    overflow: hidden;
+}
+.hidden {
+    visibility: hidden;
+}
+
+/* font settings */
+h1, h2, h3, p, a {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+h1 {    
+    font-size: 36pt;
+    text-align: center;
+}
+h2 {
+    font-size: 24pt;
+}
+h3, p, a, input, button {
+    font-size: 16pt;
+}
+.warning-msg {
+    color: red;
+}
+.light-color {
+    color: #F2EFE9;
+}
+
+/* header */
+ul {
+    display: flex;
+    background-color: #313B72;
+    margin: 0;
+    padding: 0;
+}
+li {
+    padding: 1vh 2vw;
+    list-style: none;
+}
+
+button {
+    background-color: #3685B5;
+    color: white;
+    padding: 10pt;
+    margin: 10px;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px #2D3142;
+    cursor: pointer;
+}
+button:active {
+    transform: translateY(1px);
+}
+button:disabled {
+    background-color: #424242;
+}
+.modal-close-btn {
+    display: block;
+    background-color: transparent;
+    color: black;
+    padding: 0;
+    margin: 5px;
+    box-shadow: none;
+    margin-left: auto;
+}
+
+dialog {
+    border-radius: 20px;
+    border: none;
+    transition: all 1s;
+  }
+dialog[open] {
+    opacity: 1;
+}
